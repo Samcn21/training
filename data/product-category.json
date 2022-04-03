@@ -1,0 +1,1109 @@
+{
+    "categories": {
+        "categories": [
+            {
+                "categories": [
+                    {
+                        "categories": [
+                            {
+                                "id": "men_newin",
+                                "level": 3,
+                                "name": {
+                                    "dk": "Nyheder",
+                                    "en": "New In"
+                                },
+                                "parent_category_id": "men"
+                            },
+                            {
+                                "categories": [
+                                    {
+                                        "id": "men_jeans",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Jeans",
+                                            "en": "Jeans"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    },
+                                    {
+                                        "categories": [
+                                            {
+                                                "id": "men_shirts_ls",
+                                                "level": 5,
+                                                "name": {
+                                                    "dk": "Skjorter: Lange Ærmer",
+                                                    "en": "Shirts: Long Sleeves"
+                                                },
+                                                "parent_category_id": "men_shirts"
+                                            },
+                                            {
+                                                "id": "men_shirts_ss",
+                                                "level": 5,
+                                                "name": {
+                                                    "dk": "Skjorter: Korte Ærmer",
+                                                    "en": "Shirts: Short Sleeves"
+                                                },
+                                                "parent_category_id": "men_shirts"
+                                            }
+                                        ],
+                                        "id": "men_shirts",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Skjorter",
+                                            "en": "Shirts"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    },
+                                    {
+                                        "id": "men_jackets",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Jakker",
+                                            "en": "Jackets"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    },
+                                    {
+                                        "id": "men_trousers",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Bukser",
+                                            "en": "Trousers"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    },
+                                    {
+                                        "id": "men_sweatshirts",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Sweatshirts",
+                                            "en": "Sweatshirts"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    },
+                                    {
+                                        "id": "men_tshirts",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "T-shirts",
+                                            "en": "T-shirts"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    },
+                                    {
+                                        "id": "men_suit",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Jakkesæt",
+                                            "en": "Suits"
+                                        },
+                                        "parent_category_id": "men_clothes"
+                                    }
+                                ],
+                                "id": "men_clothes",
+                                "level": 3,
+                                "name": {
+                                    "dk": "Tøj",
+                                    "en": "Clothes"
+                                },
+                                "parent_category_id": "men"
+                            },
+                            {
+                                "categories": [
+                                    {
+                                        "id": "last_week_sales",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Udsalg: Sidste Uge",
+                                            "en": "Sales: Last Week"
+                                        },
+                                        "parent_category_id": "men_sales"
+                                    },
+                                    {
+                                        "id": "last_month_sales",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Udsalg: Sidste Måned",
+                                            "en": "Sales: Last Month"
+                                        },
+                                        "parent_category_id": "men_sales"
+                                    }
+                                ],
+                                "id": "men_sales",
+                                "level": 3,
+                                "name": {
+                                    "dk": "Udsalg",
+                                    "en": "Sales"
+                                },
+                                "parent_category_id": "men"
+                            }
+                        ],
+                        "id": "men",
+                        "level": 2,
+                        "name": {
+                            "dk": "Mænd",
+                            "en": "Men"
+                        },
+                        "parent_category_id": "adults"
+                    },
+                    {
+                        "categories": [
+                            {
+                                "id": "women_newin",
+                                "level": 3,
+                                "name": {
+                                    "dk": "Nyheder",
+                                    "en": "New In"
+                                },
+                                "parent_category_id": "women"
+                            },
+                            {
+                                "id": "women_clothes",
+                                "level": 3,
+                                "name": {
+                                    "dk": "Tøj",
+                                    "en": "Clothes"
+                                },
+                                "parent_category_id": "women"
+                            },
+                            {
+                                "categories": [
+                                    {
+                                        "id": "women_trend",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Trending",
+                                            "en": "Trending"
+                                        },
+                                        "parent_category_id": "women_sales"
+                                    },
+                                    {
+                                        "id": "women_last_week_sales",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Udsalg: Sidste Uge",
+                                            "en": "Sales: Last Week"
+                                        },
+                                        "parent_category_id": "women_sales"
+                                    },
+                                    {
+                                        "id": "inspiration",
+                                        "level": 4,
+                                        "name": {
+                                            "dk": "Inspiration",
+                                            "en": "Inspiration"
+                                        },
+                                        "parent_category_id": "women_sales"
+                                    }
+                                ],
+                                "id": "women_sales",
+                                "level": 3,
+                                "name": {
+                                    "dk": "Udsalg",
+                                    "en": "Sales"
+                                },
+                                "parent_category_id": "women"
+                            }
+                        ],
+                        "id": "women",
+                        "level": 2,
+                        "name": {
+                            "dk": "Kvinder",
+                            "en": "Women"
+                        },
+                        "parent_category_id": "adults"
+                    }
+                ],
+                "id": "adults",
+                "level": 1,
+                "name": {
+                    "dk": "Voksen",
+                    "en": "Adults"
+                },
+                "parent_category_id": "root"
+            },
+            {
+                "id": "kids",
+                "level": 1,
+                "name": {
+                    "dk": "Børn",
+                    "en": "Kids"
+                },
+                "parent_category_id": "root"
+            }
+        ],
+        "id": "root",
+        "level": 0,
+        "name": {
+            "dk": "Rod",
+            "en": "Root"
+        },
+        "parent_category_id": ""
+    },
+    "products": [
+        {
+            "brand": "Vero Moda",
+            "categories": [
+                "adults",
+                "women",
+                "women_newin",
+                "women_clothes",
+                "women_last_week_sales"
+            ],
+            "color": "",
+            "id": 1,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw16f67e50/pim-static/large/10246352_PastelLilac_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw88cff593/pim-static/large/10246352_PastelLilac_004_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw10d015ad/pim-static/large/10246352_PastelLilac_005_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw73972e27/pim-static/large/10246352_PastelLilac_006_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "CABLE O-NECK KNITTED PULLOVER",
+                "en": ""
+            },
+            "price": 299.95,
+            "size": [
+                "XS",
+                "S",
+                "L",
+                "M"
+            ],
+            "stock": 10
+        },
+        {
+            "brand": "Vero Moda",
+            "categories": [
+                "adults",
+                "women",
+                "women_newin",
+                "women_clothes"
+            ],
+            "color": "black",
+            "id": 2,
+            "images": [
+                "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw7e7db60b/pim-static/large/10239757_Black_001_ProductLarge.jpg",
+                "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw6e168923/pim-static/large/10239757_Black_003_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "O-NECK MINI DRESS",
+                "en": ""
+            },
+            "price": 259.99,
+            "size": [
+                "XS",
+                "S"
+            ],
+            "stock": 5,
+            "variant": [
+                {
+                    "color": "black",
+                    "images": [
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw7e7db60b/pim-static/large/10239757_Black_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw6e168923/pim-static/large/10239757_Black_003_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S"
+                    ],
+                    "stock": 5
+                },
+                {
+                    "color": "Potting Soil",
+                    "images": [
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw1315dd40/pim-static/large/10239757_PottingSoil_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw43f81eb0/pim-static/large/10239757_PottingSoil_006_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "M"
+                    ],
+                    "stock": 7
+                }
+            ]
+        },
+        {
+            "brand": "Vero Moda",
+            "categories": [
+                "adults",
+                "women",
+                "women_newin",
+                "women_clothes",
+                "women_trend"
+            ],
+            "color": "Green",
+            "id": 3,
+            "images": [
+                "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwc8c38e7f/pim-static/large/10232404_LightGreyMelange_001_ProductLarge.jpg",
+                "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw5fc4b911/pim-static/large/10232404_LightGreyMelange_005_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "WRAP JAKKE",
+                "en": "WRAP JACKET"
+            },
+            "price": 549.95,
+            "size": [
+                "XS",
+                "S",
+                "L"
+            ],
+            "stock": 7,
+            "variant": [
+                {
+                    "color": "Green",
+                    "images": [
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwc8c38e7f/pim-static/large/10232404_LightGreyMelange_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw5fc4b911/pim-static/large/10232404_LightGreyMelange_005_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L"
+                    ],
+                    "stock": 7
+                },
+                {
+                    "color": "Potting Soil",
+                    "images": [
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwf9ab818d/pim-static/large/10232404_Peat_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwf9ab818d/pim-static/large/10232404_Peat_004_ProductLarge.jpg",
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwf9ab818d/pim-static/large/10232404_Peat_005_ProductLarge.jpg",
+                        "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwf9ab818d/pim-static/large/10232404_Peat_006_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "M"
+                    ],
+                    "stock": 9
+                }
+            ]
+        },
+        {
+            "brand": "Vero Moda",
+            "categories": [
+                "adults",
+                "women",
+                "women_newin",
+                "women_clothes",
+                "women_trend"
+            ],
+            "color": "Black",
+            "id": 4,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwf949baa7/pim-static/large/10236466_Black_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwf949baa7/pim-static/large/10236466_Black_002_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "LÆNG WRAP JAKKE",
+                "en": "LONG WRAP JACKET"
+            },
+            "price": 379.95,
+            "size": [
+                "XS",
+                "S",
+                "L",
+                "XL"
+            ],
+            "stock": 12,
+            "variant": [
+                {
+                    "color": "Black",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwf949baa7/pim-static/large/10236466_Black_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwf949baa7/pim-static/large/10236466_Black_002_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL"
+                    ],
+                    "stock": 12
+                },
+                {
+                    "color": "Dark Grey",
+                    "size": [
+                        "XS",
+                        "S",
+                        "M"
+                    ],
+                    "stock": 2
+                },
+                {
+                    "color": "Light Grey",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7a358c54/pim-static/large/10236466_LightGreyMelange_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7a358c54/pim-static/large/10236466_LightGreyMelange_002_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7a358c54/pim-static/large/10236466_LightGreyMelange_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7a358c54/pim-static/large/10236466_LightGreyMelange_004_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S"
+                    ],
+                    "stock": 0
+                },
+                {
+                    "color": "Silver Mink",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw364acb4f/pim-static/large/10236466_SilverMink_800016_001_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL"
+                    ],
+                    "stock": 1
+                }
+            ]
+        },
+        {
+            "brand": "Vero Moda",
+            "categories": [
+                "adults",
+                "women",
+                "women_clothes"
+            ],
+            "color": "Black",
+            "id": 5,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7d80e676/pim-static/large/10238964_Black_810695_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7d80e676/pim-static/large/10238964_Black_810695_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7d80e676/pim-static/large/10238964_Black_810695_004_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "HIGH WAIST PLISSERET MAXINEDERDEL",
+                "en": "HIGH WAIST PLISSERET MAXINEDERDEL"
+            },
+            "price": 299.95,
+            "size": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "stock": 100
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_newin",
+                "men_clothes",
+                "men_jeans",
+                "men_sales",
+                "last_week_sales",
+                "last_month_sales"
+            ],
+            "color": "Blue",
+            "id": 6,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_002_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_004_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_005_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_006_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_007_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwbb2ef41b/pim-static/large/12175975_BlueDenim_008_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "GLENN ORIGINAL GE 006 INDIGO KNIT SLIM FIT JEANS",
+                "en": "GLENN ORIGINAL GE 006 INDIGO KNIT SLIM FIT JEANS"
+            },
+            "price": 399.95,
+            "size": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                32,
+                33,
+                34,
+                36,
+                38
+            ],
+            "stock": "Unlimited"
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_newin",
+                "men_clothes",
+                "men_jeans"
+            ],
+            "color": "Blue / Grey",
+            "id": 7,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw25beda74/pim-static/large/12187647_GreyDenim_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw25beda74/pim-static/large/12187647_GreyDenim_002_ProductLarge.jpg"
+            ],
+            "name": {
+                "en": "MIKE ORIGINAL JOS 471 COMFORT FIT JEANS"
+            },
+            "price": 599.95,
+            "size": [
+                28,
+                29,
+                30,
+                32,
+                34,
+                36,
+                38
+            ],
+            "stock": 1000
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_newin",
+                "men_clothes",
+                "men_jeans",
+                "men_sales",
+                "last_week_sales"
+            ],
+            "color": "Blue / Grey",
+            "id": 8,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw54f95825/pim-static/large/12187634_BlackDenim_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw54f95825/pim-static/large/12187634_BlackDenim_002_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "",
+                "en": "MIKE ORIGINAL AM 248 COMFORT FIT JEANS"
+            },
+            "price": 499.95,
+            "size": [
+                34,
+                36,
+                38
+            ],
+            "stock": 1000
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_newin",
+                "men_clothes",
+                "men_shirts",
+                "men_shirts_ls"
+            ],
+            "color": "Dark Grey",
+            "id": 9,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw84614a08/pim-static/large/12172741_DarkGreyMelange_769719_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw84614a08/pim-static/large/12172741_DarkGreyMelange_769719_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw84614a08/pim-static/large/12172741_DarkGreyMelange_769719_004_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "BUTTON-DOWN TWILLVÆVET SKJORTE",
+                "en": "BUTTON-DOWN TWILL-WEAVE SHIRT"
+            },
+            "price": 299.95,
+            "size": [
+                "XS",
+                "S",
+                "L",
+                "XL",
+                "XXL",
+                "3XL"
+            ],
+            "stock": 7,
+            "variant": [
+                {
+                    "color": "Dark Grey",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw84614a08/pim-static/large/12172741_DarkGreyMelange_769719_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw84614a08/pim-static/large/12172741_DarkGreyMelange_769719_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw84614a08/pim-static/large/12172741_DarkGreyMelange_769719_004_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL",
+                        "XXL",
+                        "3XL"
+                    ],
+                    "stock": 7
+                },
+                {
+                    "color": "Forest Night",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw92cefe00/pim-static/large/12172741_ForestNight_769719_001_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL"
+                    ],
+                    "stock": 3
+                },
+                {
+                    "color": "",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw4f9d36ca/pim-static/large/12172741_Infinity_769719_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw4f9d36ca/pim-static/large/12172741_Infinity_769719_003_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "XL"
+                    ],
+                    "stock": 0
+                },
+                {
+                    "color": "Blue",
+                    "size": [
+                        "XS",
+                        "S",
+                        "XL"
+                    ],
+                    "stock": 10
+                }
+            ]
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_newin",
+                "men_clothes",
+                "men_jackets",
+                "men_sales"
+            ],
+            "color": "Black",
+            "id": 10,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw60a84853/pim-static/large/12181578_Black_001_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "ULD JAKKE",
+                "en": "WOOL JACKET"
+            },
+            "price": 839.96,
+            "size": [
+                "XS",
+                "S",
+                "L",
+                "XL"
+            ],
+            "stock": 10,
+            "variant": [
+                {
+                    "color": "Black",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw60a84853/pim-static/large/12181578_Black_001_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL"
+                    ],
+                    "stock": 10
+                },
+                {
+                    "color": "Dark Grey",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwdc9ed8a3/pim-static/large/12181578_DarkGreyMelange_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwdc9ed8a3/pim-static/large/12181578_DarkGreyMelange_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwdc9ed8a3/pim-static/large/12181578_DarkGreyMelange_004_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwdc9ed8a3/pim-static/large/12181578_DarkGreyMelange_005_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL"
+                    ],
+                    "stock": 3
+                },
+                {
+                    "color": "Light Grey",
+                    "size": [
+                        "XS",
+                        "XL"
+                    ],
+                    "stock": 0
+                }
+            ]
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_clothes",
+                "men_trousers",
+                "men_sales",
+                "last_week_sales",
+                "last_month_sales"
+            ],
+            "color": "Grey",
+            "id": 11,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_002_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_004_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "MARCO AKM 1048 CHINOS",
+                "en": "MARCO AKM 1048 CHINOS"
+            },
+            "price": 399.95,
+            "size": [
+                28,
+                30,
+                34,
+                36,
+                38
+            ],
+            "stock": "Unlimited"
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_clothes",
+                "men_trousers",
+                "men_sales",
+                "last_week_sales",
+                "last_month_sales"
+            ],
+            "color": "Grey",
+            "id": 12,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_002_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw7761e3d0/pim-static/large/12176524_Black_004_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "MARCO AKM 1048 CHINOS",
+                "en": "MARCO AKM 1048 CHINOS"
+            },
+            "price": 399.95,
+            "size": [
+                28,
+                30,
+                34,
+                36,
+                38
+            ],
+            "stock": "Unlimited"
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_clothes",
+                "men_trousers",
+                "men_sales",
+                "last_week_sales",
+                "last_month_sales"
+            ],
+            "color": "Silver",
+            "id": 13,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwcc416dd9/pim-static/large/12170333_SilverBirch_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwcc416dd9/pim-static/large/12170333_SilverBirch_002_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "MARCO AKM 638 CHINOS",
+                "en": "MARCO AKM 638 CHINOS"
+            },
+            "price": 499.95,
+            "size": [
+                28,
+                30,
+                32
+            ],
+            "stock": 200
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_clothes",
+                "men_sweatshirts",
+                "men_sales"
+            ],
+            "color": "Black",
+            "id": 14,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwde936a96/pim-static/large/12167835_Black_741834_005_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwde936a96/pim-static/large/12167835_Black_741834_004_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwde936a96/pim-static/large/12167835_Black_741834_001_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "LYNLÅS CARDIGAN",
+                "en": "ZIPPED CARDIGAN"
+            },
+            "price": 399.95,
+            "size": [
+                "XS",
+                "S",
+                "L",
+                "XL"
+            ],
+            "stock": 25
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_clothes",
+                "men_tshirts"
+            ],
+            "color": "Green",
+            "id": 15,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw87a15f6e/pim-static/large/12156101_AgaveGreen_695428_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw87a15f6e/pim-static/large/12156101_AgaveGreen_695428_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw87a15f6e/pim-static/large/12156101_AgaveGreen_695428_004_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "ØKOLOGISK BOMULD T-SHIRT",
+                "en": "ZIPPED CARDIGAN"
+            },
+            "price": 149.95,
+            "size": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "stock": 1000,
+            "variant": [
+                {
+                    "color": "Green",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw87a15f6e/pim-static/large/12156101_AgaveGreen_695428_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw87a15f6e/pim-static/large/12156101_AgaveGreen_695428_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw87a15f6e/pim-static/large/12156101_AgaveGreen_695428_004_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "M",
+                        "L",
+                        "XL",
+                        "XXL"
+                    ],
+                    "stock": 1000
+                },
+                {
+                    "color": "Black",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwcb100621/pim-static/large/12156101_Black_695428_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwcb100621/pim-static/large/12156101_Black_695428_003_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "L",
+                        "XL"
+                    ],
+                    "stock": 13
+                },
+                {
+                    "color": "Blue Heaven",
+                    "size": [
+                        "XS",
+                        "XL",
+                        "XXL"
+                    ],
+                    "stock": 0
+                },
+                {
+                    "color": "Red",
+                    "size": [
+                        "XS",
+                        "XL"
+                    ],
+                    "stock": 20
+                },
+                {
+                    "color": "Chili",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw9fad76f0/pim-static/large/12156101_Chili_695428_001_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw9fad76f0/pim-static/large/12156101_Chili_695428_003_ProductLarge.jpg",
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw9fad76f0/pim-static/large/12156101_Chili_695428_004_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "XL"
+                    ],
+                    "stock": 24
+                },
+                {
+                    "color": "Dark Earth",
+                    "images": [
+                        "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw208f43c5/pim-static/large/12156101_DarkEarth_695428_006_ProductLarge.jpg"
+                    ],
+                    "size": [
+                        "XS",
+                        "S",
+                        "M",
+                        "L",
+                        "XL",
+                        "XXL",
+                        "3XL"
+                    ],
+                    "stock": "Unlimited"
+                }
+            ]
+        },
+        {
+            "brand": "Jack & Jones",
+            "categories": [
+                "adults",
+                "men",
+                "men_clothes",
+                "men_suit",
+                "men_sales",
+                "last_week_sales",
+                "last_month_sales"
+            ],
+            "color": "Blue",
+            "id": 16,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwa0b9b41a/pim-static/large/12141107_AiryBlue_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwa0b9b41a/pim-static/large/12141107_AiryBlue_002_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwa0b9b41a/pim-static/large/12141107_AiryBlue_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwa0b9b41a/pim-static/large/12141107_AiryBlue_004_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwa0b9b41a/pim-static/large/12141107_AiryBlue_005_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "KLASSISK BLAZER",
+                "en": "CLASSIC BLAZER"
+            },
+            "price": 999.99,
+            "size": [
+                44,
+                46,
+                48,
+                50,
+                52
+            ],
+            "stock": 12
+        },
+        {
+            "brand": "name it",
+            "categories": [
+                "kids"
+            ],
+            "color": "Color",
+            "id": 17,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw5bb55985/pim-static/large/13186196_Black_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dw5bb55985/pim-static/large/13186196_Black_001_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "BLOMSTERPRINT JUMPSUIT",
+                "en": "FLORAL PRINT JUMPSUIT"
+            },
+            "price": 259.95,
+            "size": [
+                116,
+                122,
+                128,
+                134,
+                140
+            ],
+            "stock": 5
+        },
+        {
+            "brand": "name it",
+            "categories": [
+                "kids"
+            ],
+            "color": "Color",
+            "id": 18,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwaf53c06e/pim-static/large/13178907_DarkBlueDenim_005_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwaf53c06e/pim-static/large/13178907_DarkBlueDenim_008_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwaf53c06e/pim-static/large/13178907_DarkBlueDenim_003_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwaf53c06e/pim-static/large/13178907_DarkBlueDenim_001_ProductLarge.jpg"
+            ],
+            "name": {
+                "en": "X-SLIM FIT JEANS"
+            },
+            "price": 159.95,
+            "size": [
+                92,
+                98,
+                104,
+                110
+            ],
+            "stock": 7
+        },
+        {
+            "brand": "name it",
+            "categories": [
+                "kids"
+            ],
+            "color": "Brown",
+            "id": 19,
+            "images": [
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwd77a17a2/pim-static/large/13183600_Black_001_ProductLarge.jpg",
+                "https://www.jackjones.com/on/demandware.static/-/Sites-pim-catalog/default/dwd77a17a2/pim-static/large/13183600_Black_004_ProductLarge.jpg"
+            ],
+            "name": {
+                "dk": "LÆDER BÆLTE",
+                "en": "X-SLIM FIT JEANS"
+            },
+            "price": 129.95,
+            "size": [
+                55,
+                65,
+                75
+            ],
+            "stock": 7
+        },
+        {
+            "brand": "name it",
+            "categories": [
+                "kids"
+            ],
+            "color": "Brown",
+            "id": 20,
+            "name": {
+                "dk": "SKINNY FIT JEANS",
+                "en": "SKINNY FIT JEANS"
+            },
+            "price": 159.95,
+            "size": [
+                92,
+                98,
+                104,
+                110,
+                116,
+                122
+            ],
+            "stock": 0
+        }
+    ]
+}
