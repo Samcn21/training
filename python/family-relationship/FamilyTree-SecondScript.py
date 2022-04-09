@@ -1,7 +1,7 @@
 FamilyTree=[
     {
         "name": "Setareh",
-        "age": 33,
+        "age": 32,
         "children": 0,
         "married": True,
         "role": [
