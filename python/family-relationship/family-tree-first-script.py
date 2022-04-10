@@ -1,146 +1,9 @@
-import pprint
+import json
+import collections
 
-FamilyTree=[
-    {
-        "name": "Setareh",
-        "age": 32,
-        "children": 0,
-        "married": True,
-        "role": [
-            "Wife",
-            "Daughter",
-            "Sister",
-            "Sister in law",
-            "Daughter in Law"
-        ]
-    },
-    {
-        "name": "Moeen",
-        "age": 32,
-        "children": 0,
-        "married": True,
-        "role": [
-            "Husband",
-            "Son",
-            "Brother",
-            "Brother in law",
-            "Son in Law"
-        ]
-    },
-    {
-        "name": "Sayid",
-        "age": 38,
-        "children": 0,
-        "married": False,
-        "role": [
-            "Son",
-            "Brother",
-            "Brother in Law"
-        ]
-    },
-    {
-        "name": "Mohsen",
-        "age": 35,
-        "children": 1,
-        "married": True,
-        "role": [
-            "Husband",
-            "Son",
-            "Father",
-            "Brother",
-            "Brother in law"
-        ]
-    },
-    {
-        "age": 35,
-        "children": 1,
-        "married": True,
-        "name": "Behnaz",
-        "role": [
-            "Wife",
-            "Sister in law",
-            "Mother",
-            "Daughter in Law"
-        ]
-    },
-    {
-        "age": 3,
-        "children": 0,
-        "married": False,
-        "name": "Delara",
-        "role": [
-            "Daughter",
-            "Grand Daughter"
-        ]
-    },
-    {
-        "age": 30,
-        "children": 0,
-        "married": True,
-        "name": "Hussein",
-        "role": [
-            "Husband",
-            "Son",
-            "Brother",
-            "Brother in law"
-        ]
-    },
-    {
-        "age": 29,
-        "children": 0,
-        "married": True,
-        "name": "Zahra",
-        "role": [
-            "Wife",
-            "Sister in law",
-            "Daughter in Law"
-        ]
-    },
-    {
-        "age": 59,
-        "children": 3,
-        "married": True,
-        "name": "Esfandyar",
-        "role": [
-            "Husband",
-            "Father",
-            "Grand Father",
-            "Father in law"
-        ]
-    },
-    {
-        "age": 54,
-        "children": 3,
-        "married": True,
-        "name": "Katayoon",
-        "role": [
-            "Wife",
-            "Mother",
-            "Grand Mother",
-            "Mother in law"
-        ]
-    },
-    {
-        "age": 66,
-        "children": 2,
-        "married": True,
-        "name": "Rahim",
-        "role": [
-            "Father",
-            "Father in law"
-        ]
-    },
-    {
-        "age": 66,
-        "children": 2,
-        "married": True,
-        "name": "Robabeh",
-        "role": [
-            "Mother",
-            "Mother in law"
-        ]
-    }
-]
+with open('D:/projects/json/training/data/family-tree.json') as jsonFile:
+    familyTreeData = json.load(jsonFile)
+
 
 # this function gets all values of the key in the data file
 def getValues(data, key):
@@ -151,50 +14,51 @@ def getValues(data, key):
     return values
 
 
-Names = getValues(FamilyTree, "name")
-Roles = getValues(FamilyTree, "role")
+names = getValues(familyTreeData, "name")
+roles = getValues(familyTreeData, "role")
 
 
-Kind = ""
-for i in range(len(Roles)):
-    if "Son" in Roles[i]:  
-        Kind += "Male "
-    elif "Father" in Roles[i]:
-        Kind += "Male " 
+kind = ""
+for i in range(len(roles)):
+    if "Son" in roles[i]:  
+        kind += "Male "
+    elif "Father" in roles[i]:
+        kind += "Male " 
     else :
-        Kind += "Female "
-Gender = Kind.split()
+        kind += "Female "
+gender = kind.split()
 
 
-FinalList= {Names[i] : Gender[i] for i in range(len(Names))}
+nameGenderDictionary= {names[i]+":" : gender[i] for i in range(len(names))}
+sortedDictionary = collections.OrderedDict(sorted(nameGenderDictionary.items()))
 
-def FindKeysByValue(MyDict, value):
-    NewDict = {}
-    for i in MyDict:
-        if MyDict[i] == value:
-            NewDict[i] = MyDict[i]
-    return NewDict 
 
-MalesList=FindKeysByValue(FinalList,"Male")
-FemalesList=FindKeysByValue(FinalList,"Female")
+def getSpecificKeys(mainGenderDictionary, value):
+    dividedGenderDictionary = {}
+    for i in mainGenderDictionary:
+        if mainGenderDictionary[i] == value:
+            dividedGenderDictionary[i] = mainGenderDictionary[i]
+    return dividedGenderDictionary 
+
+malesDictionary=getSpecificKeys(sortedDictionary,"Male")
+femalesDictionary=getSpecificKeys(sortedDictionary,"Female")
 
 
 isLoop = True
 while isLoop :
-    InputQuestion1 = input("Do you want to list all the people? Yes / No? : ")
-    if InputQuestion1 == "" or InputQuestion1 == "y":
-        pprint.pprint(FinalList)  
+    mainListQuestion = input("Do you want to see the list of all the people? yes / no? ").lower()
+    if mainListQuestion == "yes" or mainListQuestion == "y":
+        for key, value in sortedDictionary.items(): print (key, value)  
         isLoop = False
-    elif InputQuestion1 == "No": 
-        InputQuestion2=input ("Do you want to see Males or Females? ")
-        if InputQuestion2=="Males":
-            pprint.pprint(MalesList)
+    elif mainListQuestion == "no" or mainListQuestion == "n": 
+        genderListQuestion=input ("Do you want to see list of males or females? ").lower()
+        if genderListQuestion=="males" or genderListQuestion=="m":
+            for key, value in malesDictionary.items(): print (key, value)
             isLoop = False
-        elif InputQuestion2 == "Females":
-            pprint.pprint(FemalesList)
+        elif genderListQuestion == "females" or genderListQuestion=="f":
+            for key, value in femalesDictionary.items(): print (key, value)
             isLoop = False
         else:
-            print("Please type Males or Females")
+            print("Please type males or females")
     else:
-        print("Please type Yes or No")
-      
+        print("Please type yes or no")
