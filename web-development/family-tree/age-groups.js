@@ -3,8 +3,10 @@ const familyTree = JSON.parse(data);
 //obtain values through the keys of an array of objects
 function getValues(array, key) {
     var objectValues = [];
-    for (let i=0; i < array.length ; ++i)
-    objectValues.push(array[i][key]);
+    for (let i=0; i < array.length ; ++i) {
+        objectValues.push(array[i][key]);
+    }
+
     return objectValues;
 }
 

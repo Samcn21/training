@@ -11,7 +11,20 @@ var data =
             "Sister",
             "Sister in law",
             "Daughter in Law"
-        ]
+        ],
+        "something": {
+            "test": true,
+            "showcase": {
+                "slides": [
+                    {
+                        "name": "testo"
+                    },
+                    {
+                        "name": "festo"
+                    }
+                ]
+            }
+        }
     },
     {
         "name": "Moeen",

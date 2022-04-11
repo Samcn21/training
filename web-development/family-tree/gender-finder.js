@@ -1,37 +1,31 @@
 const familyTree = JSON.parse(data);
 
-//obtain values through the keys of an array of objects
-function getValues(array, key) {    
-    var objectValues = [];
-    for (let i=0; i < array.length ; ++i) {
-        objectValues.push(array[i][key]);
-    }
-    return objectValues;
-}
-var names = getValues(familyTree, "name");
-var roles = getValues(familyTree, "role");
+var persons = [];
+for (var i = 0; i < familyTree.length; i++) {
+    var personObject = familyTree[i];
+    var roles = personObject.role;
+    var name = personObject.name
 
-//a function for finding whether a person is male or female
-function getGender(rolesList) {
-    var genderArray = [];
-    for (let i = 0; i < rolesList.length; i++) {
-        if (rolesList[i].includes("Son") || rolesList[i].includes("Father") || rolesList[i].includes("Brother")) {
-            genderArray.push("Male");
+    for (var j = 0; j < roles.length; j++) {
+        var role = roles[j].toString().toLowerCase();
+
+        if (role === 'father' || role === 'son' || role === 'brother' || role === 'son in law' || role === 'husband') {
+            persons.push(name + ': Male');
+            break;
         } else {
-            genderArray.push("Female");
+            persons.push(name + ': Female');
+            break;
         }
+    } 
+}
+
+function showGenderList() {
+    var genderList = "";
+    for (var i = 0; i < persons.length; i++) {
+        genderList +=  "<li>" + persons[i] + "<br>" ;
     }
-    return genderArray;   
-}  
-var gender = getGender(roles);  
-
-// shows List of people with their gender in HTML
-function show() {
-    document.getElementById("genderList").style.display = "list-item";
+    
+    var genderListElement = document.getElementById("genderList");
+    genderListElement.innerHTML = genderList;
+    genderListElement.style.display = "list-item";
 }
-
-var genderList = "";
-for (let i = 0; i < names.length; i++) {
-    genderList +=  "<li>" + names[i] + ": " + gender[i] + "<br>" ;
-}
-document.getElementById("genderList").innerHTML = genderList;
