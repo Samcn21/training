@@ -15,9 +15,7 @@ var roles = getValues(familyTree, "role");
 function getGender(rolesList) {
     var genderArray = [];
     for (let i = 0; i < rolesList.length; i++) {
-        if (rolesList[i].includes("Son")) {
-            genderArray.push("Male");
-        } else if (rolesList[i].includes("Father")) {
+        if (rolesList[i].includes("Son") || rolesList[i].includes("Father") || rolesList[i].includes("Brother")) {
             genderArray.push("Male");
         } else {
             genderArray.push("Female");
@@ -34,6 +32,6 @@ function show() {
 
 var genderList = "";
 for (let i = 0; i < names.length; i++) {
-genderList +=  "<li>" + names[i] + ": " + gender[i] + "<br>" ;
+    genderList +=  "<li>" + names[i] + ": " + gender[i] + "<br>" ;
 }
 document.getElementById("genderList").innerHTML = genderList;
