@@ -1,7 +1,7 @@
 import json
 import collections
 
-with open('D:/projects/json/training/data/family-tree.json') as jsonFile:
+with open('../../data/family-tree.json') as jsonFile:
     familyTreeData = json.load(jsonFile)
 
 
