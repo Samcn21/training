@@ -1,4 +1,18 @@
-var data = `[{ "name": "Setareh","age": 33,"children": 0,"married": true,"role": ["Wife","Daughter","Sister","Sister in law","Daughter in Law"]},
+var data = 
+`[
+    { 
+        "name": "Setareh",
+        "age": 33,
+        "children": 0,
+        "married": true,
+        "role": [
+            "Wife",
+            "Daughter",
+            "Sister",
+            "Sister in law",
+            "Daughter in Law"
+        ]
+    },
     {
         "name": "Moeen",
         "age": 32,
