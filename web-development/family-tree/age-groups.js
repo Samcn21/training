@@ -56,6 +56,6 @@ function show() {
 
 var finalResult = "";
 for (let i = 0; i < ageGroups.length; i++) {
-finalResult +=  groups[i] + "<br>" + ageGroups[i] + " " + personOrPersons[i] + "<br><br>";
+    finalResult +=  groups[i] + "<br>" + ageGroups[i] + " " + personOrPersons[i] + "<br><br>";
 }
 document.getElementById("ageGroupsList").innerHTML = finalResult;
