@@ -1,26 +1,11 @@
 const familyTree = JSON.parse(data);
 
-<<<<<<< Updated upstream
-//obtain values through the keys of an array of objects
-function getValues(array, key) {
-    var objectValues = [];
-    for (let i=0; i < array.length ; ++i)
-    objectValues.push(array[i][key]);
-    return objectValues;
-}
-
-var ages = getValues(familyTree, "age");
-console.log(ages)
-var groups =["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "others"];
-var ageGroups = [0, 0, 0, 0, 0, 0, 0, 0];
-=======
 var x =["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "others"];
 var ageGroupsCounter = [0, 0, 0, 0, 0, 0, 0, 0];
 
 for (var i = 0; i < familyTree.length; i++) {
     var personObject = familyTree[i];
     var age = personObject.age; 
->>>>>>> Stashed changes
 
     switch(true) {
         case age <= 10:
