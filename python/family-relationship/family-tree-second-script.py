@@ -14,7 +14,6 @@ for i in range(len(familyTreeData)):
 ageGroups =["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70","71-80","81-90","91-100", "+100"]
 totalList = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-
 for i in range(len(familyTreeData)):
     if agesList[i] <=10:
         totalList[0] +=1

@@ -1,6 +1,6 @@
 const familyTree = JSON.parse(data);
 
-var x =["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "others"];
+var ageGroups =["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "others"];
 var ageGroupsCounter = [0, 0, 0, 0, 0, 0, 0, 0];
 
 for (var i = 0; i < familyTree.length; i++) {
@@ -43,7 +43,7 @@ for (var i = 0; i <= ageGroupsCounter.length; i++) {
 function showAgeGrpups() {
     var ageGroupsList = "";
     for (var i = 0; i < ageGroupsCounter.length; i++) {
-        ageGroupsList +=  x[i] + "<br>" + ageGroupsCounter[i] + " " + personOrPersons[i] + "<br><br>";
+        ageGroupsList +=  ageGroups[i] + "<br>" + ageGroupsCounter[i] + " " + personOrPersons[i] + "<br><br>";
     }
 
     var ageGroupsElement = document.getElementById("ageGroupsList");
