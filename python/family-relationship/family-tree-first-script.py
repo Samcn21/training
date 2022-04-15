@@ -30,6 +30,8 @@ gender = kind.split()
 
 
 nameGenderDictionary= {names[i]+":" : gender[i] for i in range(len(names))}
+
+print(type(nameGenderDictionary))
 sortedDictionary = collections.OrderedDict(sorted(nameGenderDictionary.items()))
 
 
