@@ -3,41 +3,38 @@
     justify-content: center;
 }
 
-.second-hand {
+.second-hand,
+.minute-hand,
+.hour-hand {
     position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;   
+    left: 50%; 
+}
+
+.second-hand {
     width: 2px;
     height: 110px;
     background: gold;
     top: 40px;
-    left: 50%;
     z-index: 3;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
     transform-origin: center 110px; /* x-axis y-axis */
 }
 
 .minute-hand {
-    position: absolute;
     width: 4px;
     height: 100px;
     background: grey;
     top: 50px;
-    left: 50%;
     z-index: 2;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
     transform-origin: center 100px;
 }
 
 .hour-hand {
-    position: absolute;
     width: 5px;
     height: 70px;
     background: black;
     top: 80px;
-    left: 50%;
     z-index: 1;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
     transform-origin: center 70px;
 }
