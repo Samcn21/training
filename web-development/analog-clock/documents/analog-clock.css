@@ -1,43 +1,67 @@
-.background {
-    display: flex;
-    justify-content: center;
+.second-hand,
+.minute-hand,
+.hour-hand {
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;   
+    left: 50%; 
 }
 
 .second-hand {
-    position: absolute;
     width: 2px;
-    height: 110px;
+    height: 85px;
     background: gold;
-    top: 40px;
-    left: 50%;
+    top: 130px;
     z-index: 3;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    transform-origin: center 110px; /* x-axis y-axis */
+    transform-origin: center 85px; /* x-axis y-axis */
 }
 
 .minute-hand {
-    position: absolute;
     width: 4px;
-    height: 100px;
+    height: 80px;
     background: grey;
-    top: 50px;
-    left: 50%;
+    top: 135px;
     z-index: 2;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    transform-origin: center 100px;
+    transform-origin: center 80px;
 }
 
 .hour-hand {
-    position: absolute;
     width: 5px;
-    height: 70px;
+    height: 60px;
     background: black;
-    top: 80px;
-    left: 50%;
+    top: 155px;
     z-index: 1;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    transform-origin: center 70px;
+    transform-origin: center 60px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.items {
+    margin-left: auto;
+    margin-right: auto;         
+}
+
+#pendulum {
+    animation: pendulum 2000ms infinite;
+    transform-origin: center -200px;
+    margin-top : -10px;
+    z-index: -1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pendulum {
+    0% {
+        transform: rotateZ(-8deg)
+    }
+    50% {
+        transform: rotateZ(8deg)
+    }
+    100% {
+        transform: rotateZ(-8deg)
+    }
 }
