@@ -1,0 +1,163 @@
+body, th, tr, td, thead, b, p {
+    font-family: sans-serif;
+    font-size:11pt;
+}
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    border:solid rgb(156, 216, 254) 1px;
+    border-right: none;
+    float: left;
+    padding: 20px;
+    position: relative;
+    width: calc(100% - 215px);
+}
+
+h1, h2 {
+    margin-bottom: -3px;
+    font-family: Comic;
+}
+
+i {
+    color:grey;
+    margin-left: 30px;
+}
+
+th {
+    background-color: rgb(221, 211, 255);
+}
+
+.headerUp {
+    width: 100%;
+    height: 30px;
+}
+
+.headerUp a {
+    float: right;
+}
+
+.headerDown a {
+    float: right;
+}
+
+.headerDown {
+    width: 100%;
+    height: 40px;  
+}
+
+.leftSide {
+    width: 130px;
+    padding:  20px;
+    float: left;
+    line-height: 20px;
+}
+
+.articleDescription {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 20px;
+    border:solid 1px gray;
+    border-left: orange 10px solid;
+    white-space: nowrap;
+}
+
+.rightSide {
+    background-color: white;
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+    float: right;
+    padding: 5px;
+    margin-top: 220px;
+}
+
+.contents {
+    border: 1px black solid;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 10pt;
+    line-height: 22px;
+}
+
+.containerLeft, .containerRight {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    overflow: hidden; 
+    word-wrap: break-word; 
+    width: 220px; 
+    border:solid 1px rgb(185, 185, 185);
+    margin: 0 10px 0 10px;
+    background-color: white;
+}
+
+.containerLeft {
+    float: left;
+}
+
+.containerRight {
+    float: right;
+}
+
+div .title {
+    text-align: center;
+    margin: -4px;
+}
+
+section p {
+    font-size: 9pt;
+    background-color: rgb(236, 230, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+#wikipediaLogo {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top:-90px;
+    margin-left: 10%;   
+}
+
+.borderBox {
+    margin-right: 50px;
+    padding: 6px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#articleLogo {
+    float: left;
+    margin-top: 10px;
+}
+
+.wikimedia {
+    float: right;
+    border: black solid 1px;
+    width: 250px;
+    margin-top: -50px;
+}
+
+.footer {
+    position: relative;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.footerDown {
+    float: left;
+    word-spacing: 10px;
+}
