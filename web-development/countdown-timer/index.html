@@ -1,9 +1,22 @@
 <html>
     <head>
+        <title>countdown-timer</title> 
         <link rel="stylesheet" href="documents/countdown-timer.css">
     </head>
 
     <body>
+        <section class="slideShow">
+            <div id="slider">
+                <section>
+                    <img src="images/image-1.png">
+                    <img src="images/image-2.png">
+                    <img src="images/image-3.png">
+                    <img src="images/image-4.png">
+                </section>
+                <div class="indicator"></div>
+            </div>
+        </section>  
+
         <div class="container">
             Date:<input id="date" type="date"/>
             Time:<input id="time" type="time"/>
@@ -14,5 +27,6 @@
         
         <p id="timer"></p>
         <script src="documents/countdown-timer.js"></script>
+
     </body>
 </html>

@@ -1,5 +1,7 @@
 body {
     background-color: beige;
+    display: flex;
+    justify-content: center;
 }
 
 p {
@@ -8,4 +10,67 @@ p {
     padding-top: 200px;
     font-family: Impact;
     word-spacing: 5px;
+}
+
+.container {
+    position: absolute;
+    top:500px;
+    left: auto;
+    right: auto;
+}
+
+.slideShow{
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 10px;
+    background: white;
+    max-width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+   
+#slider { 
+    overflow: hidden; 
+}
+
+#slider section { 
+    position: relative;
+    width: 500%;
+    animation: 20s sliding ease infinite;
+}
+
+#slider section img { 
+    width: 20%; 
+    float: left; 
+}
+
+@keyframes sliding{
+    0%   {left: 0%;}
+    5%   {left: 0%;}
+    25%  {left: -100%;}
+    50%  {left: -200%;}
+    75%  {left: -300%;}
+    100% {left: 0%;}
+}        
+
+.indicator{
+    width: 100%;
+    max-width: 740px;
+    height: 6px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    animation: indicating 5s ease infinite;
+}
+
+@keyframes indicating{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
 }
