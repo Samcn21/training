@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Age Groups</title>
+        <link rel="stylesheet" href="documents/age-groups.css">
+    </head>
+    <body>
+        <div class="contentWrapper">
+            <div class="content">
+              <p>Click to find out how many people there are in different age groups.</p>
+              <button class="modalToggle" onclick="showAgeGroups()">Click me</button>
+            </div>
+        </div>
+      
+        <div class="modalWrapper">
+            <div class="modal">
+                <button class="modalToggle modalButton">&times;</button>
+                <h2 class="modalTitle">Groups list</h2>
+                <div class="modalContent">
+                   <p class="p" id="ageGroupsList"></p>
+                </div>
+            </div>
+        </div>
+            
+        <script type="text/javascript" src="documents/data.js"></script>
+        <script type="text/javascript" src="documents/age-groups.js"></script> 
+    </body>
+</html>
