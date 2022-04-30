@@ -1,11 +1,24 @@
 <html>
     <head>
         <title>Gender Finder</title>
+        <link rel="stylesheet" href="documents/gender-finder.css">
     </head>
     <body>
-        <input type="button" value="click me" onclick="showGenderList()">
-        <p id="genderList" style="display: none;"></p>
-        <script type="text/javascript" src="data.js"></script>
-        <script type="text/javascript" src="gender-finder.js"></script>
+        
+        <div class="box">
+            <p>To see the full list of people by gender, tap the button</p>
+            <a class="button" href="#overlay" onclick="showGenderList()">Gender Table</a>
+        </div>
+        
+        <div id="overlay">
+            <div class="popup">
+                <h2>Gender Table</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content" id="genderList"></div>
+            </div>
+        </div>	
+    
+        <script type="text/javascript" src="../age-groups/documents/data.js"></script>
+        <script type="text/javascript" src="documents/gender-finder.js"></script>
     </body>
 </html>
