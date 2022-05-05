@@ -2,6 +2,7 @@ body, th, tr, td, thead, b, p {
     font-family: sans-serif;
     font-size:11pt;
 }
+
 p {
     line-height: 25px;
 }
@@ -37,32 +38,32 @@ th {
     background-color: rgb(221, 211, 255);
 }
 
-.headerUp {
+.header__up {
     width: 100%;
     height: 30px;
 }
 
-.headerUp a {
+.header__up a {
     float: right;
 }
 
-.headerDown a {
-    float: right;
-}
-
-.headerDown {
+.header__down {
     width: 100%;
-    height: 40px;  
+    height: 40px;
 }
 
-.leftSide {
+.header__down a {
+    float: right;
+}
+
+.aside__left {
     width: 130px;
-    padding:  20px;
+    padding: 20px;
     float: left;
     line-height: 20px;
 }
 
-.articleDescription {
+.main__article-description {
     width: 80%;
     height: auto;
     margin-left: 10%;
@@ -72,7 +73,7 @@ th {
     white-space: nowrap;
 }
 
-.rightSide {
+.main__right {
     background-color: white;
     width: 250px;
     height: auto;
@@ -82,7 +83,7 @@ th {
     margin-top: 220px;
 }
 
-.contents {
+.container__contents-table {
     border: 1px black solid;
     width: 200px;
     height: auto;
@@ -92,29 +93,28 @@ th {
     line-height: 22px;
 }
 
-.containerLeft, .containerRight {
+.container__image {
     display: flex;
     padding: 5px;
     flex-direction: column;
-    overflow: hidden; 
-    word-wrap: break-word; 
+    overflow: hidden;
+    word-wrap: break-word;
     width: 220px; 
     border:solid 1px rgb(185, 185, 185);
     margin: 0 10px 0 10px;
     background-color: white;
 }
 
-.containerLeft {
+.container__image--left {
     float: left;
 }
 
-.containerRight {
+.container__image--right {
     float: right;
 }
 
-div .title {
+div .text-center {
     text-align: center;
-    margin: -4px;
 }
 
 section p {
@@ -124,14 +124,14 @@ section p {
     text-align: center;
 }
 
-#wikipediaLogo {
+#wikipedia-logo {
     width: 80%;
     margin-bottom: 20px;
     margin-top:-90px;
-    margin-left: 10%;   
+    margin-left: 10%;
 }
 
-.borderBox {
+.box--border-black {
     margin-right: 50px;
     padding: 6px;
     border: 1px solid grey;
@@ -139,7 +139,7 @@ section p {
     width: 100%;
 }
 
-#articleLogo {
+#article-logo {
     float: left;
     margin-top: 10px;
 }
@@ -157,7 +157,7 @@ section p {
     margin-left: 15%;
 }
 
-.footerDown {
+.footer__down {
     float: left;
     word-spacing: 10px;
 }
