@@ -25,7 +25,5 @@ function showGenderList() {
         genderList +=  "<li>" + persons[i] + "<br>" ;
     }
     
-    var genderListElement = document.getElementById("genderList");
-    genderListElement.innerHTML = genderList;
-    genderListElement.style.display = "list-item";
+    document.getElementById("genderList").innerHTML = genderList;
 }

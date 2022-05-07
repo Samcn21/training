@@ -1,0 +1,75 @@
+body {
+    padding: 30px;
+    background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+  
+button {
+    padding: 10px;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    min-width: 40px; 
+}
+  
+.content {
+    font-size: 20pt;
+    filter: blur(0);
+    opacity: 1;
+    transition: all 1000ms ease;
+}
+  
+.modal {
+    position: relative;
+    background: white;
+    padding: 80px 20px 20px;
+    height: auto;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+}
+  
+.modalButton {
+    background: red;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+  
+.modalTitle {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalContent {
+    margin-left: 25%;
+    margin-top: -10%;
+    line-height: 24px;
+}
+
+.modalWrapper {
+    position: fixed;
+    top: 100vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(1.2);
+    filter: blur(15px);
+    opacity: 0.01;
+    transition: transform 500ms ease 200ms, filter 500ms ease 200ms, opacity 500ms ease 200ms;
+}
+  
+.modalWrapper.active {
+    top: 300px;
+    margin-top: -150px;
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+}
+  
+.active .content {
+    filter: blur(8px);
+}

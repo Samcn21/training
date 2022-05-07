@@ -1,0 +1,82 @@
+body {
+    background: rgb(100, 100, 100);
+    color: #222;
+}
+    
+.box {
+    width: 25%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.3);
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px/50px;
+    text-align: center;
+    margin-top: 100px;
+    line-height: 40px;
+}
+    
+.button {
+    padding: 10px;
+    color: white;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+    
+.button:hover {
+    background: #06D85F;
+}
+    
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+    
+#overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+    
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(210, 240, 210);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+    
+.popup h2 {
+    margin: 10px;
+    color: #333;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+    
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+    
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    height: auto;
+}

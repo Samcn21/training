@@ -24,8 +24,17 @@ for (var i = 0; i < maxAge; i += interval) {
     stats.push(text + total);
 }
 
-function showAgeGrpups() {
-    var ageGroupsElement = document.getElementById("ageGroupsList");
-    ageGroupsElement.innerHTML = stats;
-    ageGroupsElement.style.display = "block";
+function showAgeGroups() {
+    document.getElementById("ageGroupsList").innerHTML = stats;
 }
+
+var contentWrapper = document.querySelector(".contentWrapper");
+var modalWrapper = document.querySelector(".modalWrapper");
+var modalButtons = document.querySelectorAll(".modalToggle");
+
+modalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        contentWrapper.classList.toggle("active");
+        modalWrapper.classList.toggle("active");
+    });
+});

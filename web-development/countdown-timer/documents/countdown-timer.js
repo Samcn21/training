@@ -39,4 +39,5 @@ clickElement.addEventListener("click", function() {
     setInterval(countdownTimer, 1000);
     
     document.querySelector(".container").style.display = "none";
+    document.querySelector(".slideShow").style.display = "none";
 })
