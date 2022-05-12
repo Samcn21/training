@@ -2,29 +2,31 @@ var firstNumber = document.getElementById("first-number");
 var secondNumber = document.getElementById("second-number");
 var finalResult = document.getElementById("final-result");
 
-
 counterActivator = () => {
+    var step = Math.abs(secondNumber.value - firstNumber.value)/10;
+
     if (secondNumber.value > firstNumber.value) {
-        var result = 0;
+        var addingNumbers = parseInt(firstNumber.value);
+
         counterUp = () => {
-            var step = (secondNumber.value - firstNumber.value)/10;
-            result += (Math.round(Math.random() *step));
-            
-            if (result < secondNumber.value) {
-                finalResult.innerHTML = result;
+            addingNumbers += (Math.round(Math.random() * step));
+        
+            if (addingNumbers < secondNumber.value) {
+                finalResult.innerHTML = addingNumbers;
             } else {
                 finalResult.innerHTML = secondNumber.value;
             }
         }
         setInterval(counterUp, 100);
+
     } else {
-        var result2 = firstNumber.value;
+        var subtractNumbers = firstNumber.value;
+        
         counterDown = () => {
-            var step2 = (firstNumber.value - secondNumber.value)/10;
-            result2 -= (Math.round(Math.random() *step2));
+            subtractNumbers -= (Math.round(Math.random() * step));
             
-            if (result2 > secondNumber.value) {
-                finalResult.innerHTML = result2;
+            if (subtractNumbers > secondNumber.value) {
+                finalResult.innerHTML = subtractNumbers;
             } else {
                 finalResult.innerHTML = secondNumber.value;
             }
