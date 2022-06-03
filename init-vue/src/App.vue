@@ -1,8 +1,11 @@
 <template>
   <nav>
+    <router-link to="/">Home</router-link> |
     <router-link to="/age-calculator">Age Calculator</router-link> |
     <router-link to="/counter-number">Counter Number</router-link> |
-    <router-link to="/random-number">Random Number</router-link>
+    <router-link to="/random-number">Random Number</router-link> |
+    <router-link to="/countdown-timer">Countdown Timer</router-link> |
+    <router-link to="/analog-clock">Analog Clock</router-link>
   </nav>
   <router-view/>
 </template>

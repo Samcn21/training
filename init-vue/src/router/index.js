@@ -1,9 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import NotFound from '../views/NotFound.vue'
 import AgeCalculator from '../views/AgeCalculator.vue'
 import CounterNumber from '../views/CounterNumber.vue'
 import RandomNumber from '../views/RandomNumber.vue'
+import CountdownTimer from '../views/CountdownTimer.vue'
+import AnalogClock from '../views/AnalogClock.vue'
 
 const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: NotFound
+  },
   {
     path: '/age-calculator',
     name: 'age-calculator',
@@ -18,6 +32,16 @@ const routes = [
     path: '/random-number',
     name: 'random-number',
     component: RandomNumber
+  },
+  {
+    path: '/countdown-timer',
+    name: 'countdown-timer',
+    component: CountdownTimer
+  },
+  {
+    path: '/analog-clock',
+    name: 'analog-clock',
+    component: AnalogClock
   }
 ]
 
