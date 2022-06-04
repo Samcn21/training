@@ -43,74 +43,85 @@ export default {
     play1() {
       if (this.xTurn == true && this.content1 == ''){
         this.content1 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content1 == ''){
         this.content1 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
+      
     },
     play2() {
       if (this.xTurn == true && this.content2 == ''){
         this.content2 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content2 == '') {
         this.content2 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
+      
     },
     play3() {
       if (this.xTurn == true && this.content3 == ''){
         this.content3 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content3 == '') {
         this.content3 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     play4() {
       if (this.xTurn == true && this.content4 == ''){
         this.content4 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content4 == '') {
         this.content4 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     play5() {
       if (this.xTurn == true && this.content5 == ''){
         this.content5 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content5 == '') {
         this.content5 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     play6() {
       if (this.xTurn == true && this.content6 == ''){
         this.content6 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content6 == '') {
         this.content6 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     play7() {
       if (this.xTurn == true && this.content7 == ''){
         this.content7 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content7 == '') {
         this.content7 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     play8() {
       if (this.xTurn == true && this.content8 == ''){
         this.content8 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content8 == '') {
         this.content8 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     play9() {
       if (this.xTurn == true && this.content9 == ''){
         this.content9 = "x"
+        this.xTurn = !this.xTurn
       }else if (this.content9 == '') {
         this.content9 = "o"
+        this.xTurn = !this.xTurn
       }
-      this.xTurn = !this.xTurn
     },
     endGame() {
       this.result = result
