@@ -1,6 +1,7 @@
 <template>
   <input type="text" placeholder="First Player's Name" v-model="firstPlayer">
   <input type="text" placeholder="Second Player's Name" v-model="secondPlayer">
+  <button @click="playAgain" v-show = "gameIsOver">Play Again</button>
   <div class="gameBackground">
     <div class="cellule" @click="play1">{{ content1 }}</div>
     <div class="cellule" @click="play2">{{ content2 }}</div>
@@ -11,15 +12,16 @@
     <div class="cellule" @click="play7">{{ content7 }}</div>
     <div class="cellule" @click="play8">{{ content8 }}</div>
     <div class="cellule" @click="play9">{{ content9 }}</div>
-    <div class="result-container" v-if = "gameIsOver">
+    <div class="result-container" v-show = "gameIsOver" v-if="closeResult">
       <div class="result">
         <div v-if = "firstPlayerIsWinner">{{firstPlayer}}</div>
         <div v-if = "secondPlayerIsWinner">{{secondPlayer}}</div>
         {{result}}
+        <button @click="endGame()" class="close-button">x</button>
       </div>
     </div>
   </div>
-  <GameResult v-if="gameIsOver" :result="result" @end="endGame" />
+  <GameResult v-if="gameIsOver" :result="result" />
 </template>
 
 <script>
@@ -44,10 +46,28 @@ export default {
       content9: '',
       xTurn: true,
       gameIsOver: false,
+      closeResult: true,
       result: null
     }
   },
   methods: {
+    playAgain() {
+      this.firstPlayerIsWinner = false,
+      this.secondPlayerIsWinner = false,
+      this.content1 = '',
+      this.content2 = '',
+      this.content3 = '',
+      this.content4 = '',
+      this.content5 = '',
+      this.content6 = '',
+      this.content7 = '',
+      this.content8 = '',
+      this.content9 = '',
+      this.xTurn = true,
+      this.gameIsOver = false,
+      this.closeResult = true,
+      this.result = null
+    },
     play1() {
       if (this.xTurn == true && this.content1 == ''){
         this.content1 = "x"
@@ -130,8 +150,7 @@ export default {
       }
     },
     endGame() {
-      this.result = result
-      this.gameIsOver = true
+      this.closeResult = false
     }
   },
   updated() {
@@ -170,11 +189,7 @@ export default {
 }
 </script>
 
-<style scoped>
-  * {
-    box-sizing: border-box;
-  }
-  
+<style scoped>  
   .gameBackground {
     background-image: url(../assets/images-tic-tac-toe-game/gameBackground.png);
     background-repeat: no-repeat;
@@ -204,7 +219,7 @@ export default {
     justify-content: center;
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -212,8 +227,8 @@ export default {
 
   .result {
     width: 500px;
-    height: 300px;
-    background-color: yellowgreen;
+    height: auto;
+    background-color: #4e9c81;
     font-size: 50pt;
     position: relative;
     margin: 200px auto;
@@ -224,5 +239,14 @@ export default {
 
   input {
     margin: 20px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25pt;
+    border-radius: 40%;
+    cursor: pointer;
   }
 </style>
