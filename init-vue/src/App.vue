@@ -5,7 +5,8 @@
     <router-link to="/counter-number">Counter Number</router-link> |
     <router-link to="/random-number">Random Number</router-link> |
     <router-link to="/countdown-timer">Countdown Timer</router-link> |
-    <router-link to="/analog-clock">Analog Clock</router-link>
+    <router-link to="/analog-clock">Analog Clock</router-link> |
+    <router-link to="/tic-tac-toe-game">Tic-Tac-Toe Game</router-link>
   </nav>
   <router-view/>
 </template>
