@@ -1,4 +1,6 @@
 <template>
+  <input type="text" placeholder="First Player's Name" v-model="firstPlayer">
+  <input type="text" placeholder="Second Player's Name" v-model="secondPlayer">
   <div class="gameBackground">
     <div class="cellule" @click="play1">{{ content1 }}</div>
     <div class="cellule" @click="play2">{{ content2 }}</div>
@@ -11,6 +13,8 @@
     <div class="cellule" @click="play9">{{ content9 }}</div>
     <div class="result-container" v-if = "gameIsOver">
       <div class="result">
+        <div v-if = "firstPlayerIsWinner">{{firstPlayer}}</div>
+        <div v-if = "secondPlayerIsWinner">{{secondPlayer}}</div>
         {{result}}
       </div>
     </div>
@@ -25,6 +29,10 @@ export default {
   components: { GameResult },
   data() {
     return {
+      firstPlayer: '',
+      secondPlayer: '',
+      firstPlayerIsWinner: false,
+      secondPlayerIsWinner: false,
       content1: '',
       content2: '',
       content3: '',
@@ -48,7 +56,6 @@ export default {
         this.content1 = "o"
         this.xTurn = !this.xTurn
       }
-      
     },
     play2() {
       if (this.xTurn == true && this.content2 == ''){
@@ -57,8 +64,7 @@ export default {
       }else if (this.content2 == '') {
         this.content2 = "o"
         this.xTurn = !this.xTurn
-      }
-      
+      }  
     },
     play3() {
       if (this.xTurn == true && this.content3 == ''){
@@ -139,7 +145,8 @@ export default {
       this.content3 == 'x' && this.content5 == 'x' && this.content7 == 'x' ||
       this.content1 == 'x' && this.content5 == 'x' && this.content9 == 'x') {
         this.gameIsOver = true
-        this.result = "X is Winner"
+        this.firstPlayerIsWinner = true
+        this.result = "(X) is Winner"
     }else if (
       this.content1 == 'o' && this.content2 == 'o' && this.content3 == 'o' ||
       this.content4 == 'o' && this.content5 == 'o' && this.content6 == 'o' ||
@@ -150,7 +157,8 @@ export default {
       this.content3 == 'o' && this.content5 == 'o' && this.content7 == 'o' ||
       this.content1 == 'o' && this.content5 == 'o' && this.content9 == 'o') {
         this.gameIsOver = true
-        this.result = "O is Winner"
+        this.secondPlayerIsWinner = true
+        this.result = "(O) is Winner"
     }else if (
       this.content1 !='' && this.content2 !='' && this.content3 !='' && this.content4 !='' && this.content5 !='' && 
       this.content6 !='' && this.content7 !='' && this.content8 !='' && this.content9 !=''
@@ -196,7 +204,7 @@ export default {
     justify-content: center;
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -214,4 +222,7 @@ export default {
     padding: 40px;
   }
 
+  input {
+    margin: 20px;
+  }
 </style>
