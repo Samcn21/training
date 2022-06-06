@@ -7,6 +7,7 @@ import RandomNumber from '../views/RandomNumber.vue'
 import CountdownTimer from '../views/CountdownTimer.vue'
 import AnalogClock from '../views/AnalogClock.vue'
 import TicTacToeGame from '../views/TicTacToeGame.vue'
+import TicTacToeGame2 from '../views/TicTacToeGame2.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
   path: '/tic-tac-toe-game',
   name: 'tic-tac-toe-game',
   component: TicTacToeGame
+  },
+  {
+    path: '/tic-tac-toe-game2',
+    name: 'tic-tac-toe-game',
+    component: TicTacToeGame2
   }
 ]
 

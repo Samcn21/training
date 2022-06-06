@@ -6,7 +6,8 @@
     <router-link to="/random-number">Random Number</router-link> |
     <router-link to="/countdown-timer">Countdown Timer</router-link> |
     <router-link to="/analog-clock">Analog Clock</router-link> |
-    <router-link to="/tic-tac-toe-game">Tic-Tac-Toe Game</router-link>
+    <router-link to="/tic-tac-toe-game">Tic-Tac-Toe Game</router-link> |
+    <router-link to="/tic-tac-toe-game2">Tic-Tac-Toe Game Revised</router-link>
   </nav>
   <router-view/>
 </template>
@@ -32,4 +33,13 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.console-log {
+    border: 1px dashed black;
+}
+
+.console-error {
+    border: 1px solid red;
+}
+
 </style>
