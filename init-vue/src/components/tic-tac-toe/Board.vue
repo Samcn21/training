@@ -31,7 +31,7 @@ export default {
     methods: {
         handleKeyboard(e) {
             // get keyboard input key and convert to number
-            const key = +String.fromCharCode(e.keyCode);
+            const key = +e.key;
 
             // if the input key is not a number we return early
             if (isNaN(key)) {
@@ -50,6 +50,7 @@ export default {
                 this.player2 = 'O'; 
                 this.takeAction('X', key);
                 this.nextPlayer = 'O';
+                return;
             } 
 
             // if the game is initialized already and keyboard player is the next move, keyboard takes action and we set the next turn for mouse player
@@ -70,7 +71,7 @@ export default {
         }
     },
     mounted() {
-        window.addEventListener('keypress', (e) => this.handleKeyboard(e));
+        window.addEventListener('keyup', (e) => this.handleKeyboard(e));
     }
 }
 </script>
