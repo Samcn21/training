@@ -104,7 +104,8 @@ export default {
         this.xTurn = !this.xTurn
       }
     },
-    play5() {
+    play5(index) {
+
       if (this.xTurn == true && this.content5 == ''){
         this.content5 = "x"
         this.xTurn = !this.xTurn

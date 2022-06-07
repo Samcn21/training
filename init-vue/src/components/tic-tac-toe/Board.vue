@@ -14,7 +14,13 @@ export default {
     },
     data() {
         return {
-            something: 213
+            // keyboard is always X
+            // mouse is always O
+            isGameInit: false,
+            player1: '',
+            player2: '',
+            nextPlayer: '',
+            gameState: []
         }
     },
     computed: {
@@ -22,13 +28,49 @@ export default {
             return 9;
         }
     },
+    methods: {
+        handleKeyboard(e) {
+            // get keyboard input key and convert to number
+            const key = +String.fromCharCode(e.keyCode);
+
+            // if the input key is not a number we return early
+            if (isNaN(key)) {
+                return;
+            }
+
+            // since keyboard has no key number greater than 9 we just check if the key is 0 we do early return
+            if (key === 0) {
+                return;
+            }
+
+            // if the game is not initialized yet means that mouse is not clicked yet and keyboard was the first user entry
+            if (!this.isGameInit) {
+                this.isGameInit = true; // game initialized
+                this.player1 = 'X';
+                this.player2 = 'O'; 
+                this.takeAction('X', key);
+                this.nextPlayer = 'O';
+            } 
+
+            // if the game is initialized already and keyboard player is the next move, keyboard takes action and we set the next turn for mouse player
+            if (this.nextPlayer === 'X') {
+                this.takeAction('X', key);
+                this.nextPlayer = 'O';
+            } else {
+                console.log('be patient! it is not your turn yet!')
+            }        
+        },
+        takeAction(player, cellIndex) {
+            const actionObject = {
+                player: player,
+                cell: cellIndex
+            };
+
+            this.gameState.push(actionObject);
+        }
+    },
     mounted() {
-        const self = this
-        window.addEventListener('keypress', (e) => {
-            const key = String.fromCharCode(e.keyCode)
-            console.log(key, self.something);
-        });
-        // console.log(`the component is now mounted. ${this.cellIndex}`)
+        window.addEventListener('keypress', (e) => this.handleKeyboard(e));
     }
 }
 </script>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'Board',
+    name: 'Cell',
     props: {
         cellIndex: {
             type: Number,
@@ -16,13 +16,11 @@ export default {
     methods: {
         execute() {
             console.log('i am executed', this.cellIndex)
-        },
-        keyboard(event) {
-            console.log(123)
-            console.log(event)
         }
     }
 }
+
+
 </script>
 
 <style>
