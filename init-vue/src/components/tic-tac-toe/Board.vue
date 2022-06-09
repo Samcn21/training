@@ -14,11 +14,7 @@ export default {
     },
     data() {
         return {
-            // keyboard is always X
-            // mouse is always O
             isGameInit: false,
-            player1: '',
-            player2: '',
             nextPlayer: '',
             cells: []
         }
@@ -56,70 +52,88 @@ export default {
                 return;
             }
 
+            this.handleGamePlay(key, 'Keyboard');     
+        },
+        handleMouse(payload) {
+            this.handleGamePlay(payload, 'Mouse');
+        },
+        handleGamePlay(cellIndex, device) {
+            // keyboard is always X
+            // mouse is always O
+            const player1 = device === 'Keyboard' ? 'X' : 'O';
+            const player2 = device === 'Keyboard' ? 'O' : 'X';
 
             // if the game is not initialized yet means that mouse is not clicked yet and keyboard was the first user entry
             if (!this.isGameInit) {
                 this.isGameInit = true; // game initialized
-                this.player1 = 'X';
-                this.player2 = 'O'; 
-                this.takeAction('X', key);
-                this.nextPlayer = 'O';
+                this.takeAction(player1, cellIndex);
+                this.nextPlayer = player2;
                 return;
             } 
 
             // if the game is initialized already and keyboard player is the next move, keyboard takes action and we set the next turn for mouse player
-            if (this.nextPlayer === 'X') {
-                const cellObject = this.cells[key - 1];
+            if (this.nextPlayer === player1) {
+                const cellObject = this.cells[cellIndex - 1];
 
                 if (cellObject.player === '') {
-                    this.takeAction('X', key);  
+                    this.takeAction(player1, cellIndex);  
                 } else {
                     console.log('This cell is already occupied, please try another cell!');
                     return;
                 }
 
-                this.nextPlayer = 'O';
+                this.nextPlayer = player2;
             } else {
                 console.log('be patient! it is not your turn yet!')
-            }        
-        },
-        controlEntry(cellIndex, device) {
-            
-        },
-        handleMouse(payload) {
-            console.log(payload)
-            // if the game is not initialized yet means that keyboard is not pressed yet and mouse was the first user entry
-            if (!this.isGameInit) {
-                this.isGameInit = true; // game initialized
-                this.player1 = 'O';
-                this.player2 = 'X'; 
-                this.takeAction('O', payload);
-                this.nextPlayer = 'X';
-                return;
-            } 
-
-            // if the game is initialized already and mouse player is the next move, mouse takes action and we set the next turn for keyboard player
-            if (this.nextPlayer === 'O') {
-                const cellObject = this.cells[payload - 1];
-
-                if (cellObject.player === '') {
-                    this.takeAction('O', payload);
-                } else {
-                    console.log('This cell is already occupied, please try another cell!');
-                    return;
-                }
-
-                this.nextPlayer = 'X';
-            } else {
-                console.log('be patient! it is not your turn yet!')
-            } 
+            }             
         },
         takeAction(player, cellIndex) {
             this.cells[cellIndex - 1].player = player;
+        },
+        findWinner() {
+            const playerX = [];
+            const playerO = [];
+            for (let i = 0; i < this.cells.length; i++) {
+                const cell = this.cells[i];
+                
+                if (cell.player === 'X') {
+                    playerX.push(cell.cellIndex);
+                }
+
+                if (cell.player === 'O') {
+                    playerO.push(cell.cellIndex);
+                }
+            }
+
+            if (this.cells.length < 5) {
+                return;
+            }
+
+            console.log(playerX, playerO);
+
+            const winnerPattern = [
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9],
+                [1, 4, 7],
+                [2, 5, 8],
+                [3, 6, 9],
+                [3, 5, 7],
+                [1, 5, 9]
+            ];
+
         }
     },
-
+    watch: {
+        cells: {
+            handler: function() {
+                this.findWinner();
+            },
+            deep: true
+        }
+    },
 }
+
 </script>
 
 <style scoped>
