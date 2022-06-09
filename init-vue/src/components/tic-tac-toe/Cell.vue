@@ -1,5 +1,5 @@
 <template>
-    <div class="cell console-error" @click="execute" @keyup.enter="keyboard">
+    <div class="cell" @click="execute" @keyup.enter="keyboard">
         <Icon :icon="player" />
     </div>    
 </template>
@@ -41,9 +41,13 @@ export default {
 <style>
 
 .cell {
-    width: 9.8rem;
-    height: 9.8rem;
+    width: 10rem;
+    height: 10rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(50, 170, 44, 0.2);
 }
 
 </style>

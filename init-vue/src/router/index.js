@@ -52,7 +52,7 @@ const routes = [
   },
   {
     path: '/tic-tac-toe-game2',
-    name: 'tic-tac-toe-game',
+    name: 'tic-tac-toe-game2',
     component: TicTacToeGame2
   }
 ]

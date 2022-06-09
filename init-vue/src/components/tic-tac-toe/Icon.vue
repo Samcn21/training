@@ -22,8 +22,11 @@ export default {
 <style scoped>
 
 .icon {
-    font-size: 2rem;
-    color: red;
+    font-size: 6rem;
+    font-weight: 600;
+    color:#18384f;
+    padding-top: 20%;
+    
 }
 
 </style>
