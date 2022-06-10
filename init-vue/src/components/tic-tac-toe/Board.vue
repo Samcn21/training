@@ -19,11 +19,6 @@ export default {
             cells: []
         }
     },
-    computed: {
-        // totalCells: ()=> {
-        //     return 9;
-        // }
-    },
     mounted() {
         window.addEventListener('keyup', (event) => this.handleKeyboard(event));
 
@@ -93,6 +88,8 @@ export default {
         findWinner() {
             const playerX = [];
             const playerO = [];
+
+            // looping through all cells to find which cells are occupied by which player
             for (let i = 0; i < this.cells.length; i++) {
                 const cell = this.cells[i];
                 
@@ -105,23 +102,81 @@ export default {
                 }
             }
 
-            if (this.cells.length < 5) {
+            const isWinnerX = this.isWinner(playerX);
+            const isWinnerO = this.isWinner(playerO);
+
+            if (isWinnerX) {
+                console.log('Player X is the Winner! Yay!');
                 return;
             }
 
-            console.log(playerX, playerO);
+            if (isWinnerO) {
+                console.log('Player O is the Winner! Yay!');
+                return;
+            }
 
-            const winnerPattern = [
+            // const checks = []
+            // for (let i = 0; i < this.cells.length; i++) {
+            //     const cell = this.cells[i];
+            //     if (cell.player !== '') {
+            //         checks.push(cell);
+            //     }
+            // }
+
+            // if (checks.length === 9) {
+            //     console.log('No winner! This is a draw!')
+            // }
+
+            // checking if all cells are occupied (there is no cell that the player attribute is empty string)
+            const areCellsFull = this.cells.every((cell) => cell.player !== '');
+            
+            // if all cells are occupied and there is no winner, means draw!
+            if (areCellsFull) {
+                console.log('No winner! This is a draw!');
+            }
+        },
+        isWinner(playerArray) {
+            const winningPatterns = [
                 [1, 2, 3],
+                [1, 5, 9],
+                [1, 4, 7],
                 [4, 5, 6],
                 [7, 8, 9],
-                [1, 4, 7],
                 [2, 5, 8],
                 [3, 6, 9],
                 [3, 5, 7],
-                [1, 5, 9]
             ];
 
+            // looping through all winning patterns
+            for (let i = 0; i < winningPatterns.length; i++) {
+                const winningPattern = winningPatterns[i];
+                const conditionsFulfilled = [];
+
+                // looping through each winning pattern
+                for (let j = 0; j < winningPattern.length; j++) {
+                    const element = winningPattern[j];
+                    const foundElement = playerArray.find((x) => x === element);
+                    
+                    // if one winning pattern element is not found in the player's selected cells,
+                    // it means the winning condition will not fulfilled so we break the loop to avoid extra calculation
+                    if (foundElement === undefined) {
+                        break;
+                    }
+
+                    // if the winning pattern element is found in the player's selected cells,
+                    // we keep it inside the conditionsFulfilled array 
+                    // and will check it outside of the loop to see if all 3 elements are in the player's selected cells
+                    conditionsFulfilled.push(foundElement);
+                }
+
+                // if all 3 winning pattern elements are found in any of the 8 patterns, it means there is a winner, so we return true.
+                if (conditionsFulfilled.length === 3) {
+                    return true;
+                }
+            }
+
+            // none of winning patterns are found in the player's selected cells which means the player is not the winner yet!
+            return false;
         }
     },
     watch: {
