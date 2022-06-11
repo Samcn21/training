@@ -1,5 +1,7 @@
 <template>
-    <div class="cell" @click="execute" @keyup.enter="keyboard">
+    <div class="cell" @click="execute" v-cloak>
+        <img v-if = "player === 'O' " class = "player-image" src="../../assets/images-tic-tac-toe-game/sayid.png"/>
+        <img v-if = "player === 'X' " class = "player-image" src="../../assets/images-tic-tac-toe-game/moeen.png"/>
         <Icon :icon="player" />
     </div>    
 </template>
@@ -50,4 +52,13 @@ export default {
     background-color: rgba(50, 170, 44, 0.2);
 }
 
+.player-image {
+    position: fixed;
+    width: 10rem;
+    height: 10rem;
+}
+
+[v-cloak] {
+    display: none;
+}
 </style>

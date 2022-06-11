@@ -1,22 +1,29 @@
 <template>
-    <div class="board">
+    <div class="board" v-cloak>
         <Cell v-for="cell in cells" :key="cell.cellIndex" :cellIndex="cell.cellIndex" :player="cell.player" @click-cell="handleMouse"  />
+        <FinalWinner v-if="showResults" :winner="winner" />
+       
+        <a v-if="showResults" href="/tic-tac-toe-game2">Play again</a>
     </div>    
 </template>
 
 <script>
 import Cell from '../tic-tac-toe/Cell.vue';
+import FinalWinner from '../tic-tac-toe/FinalWinner.vue';
 
 export default {
     name: 'Board',
     components: {
-        Cell
+        Cell,
+        FinalWinner
     },
     data() {
         return {
             isGameInit: false,
             nextPlayer: '',
-            cells: []
+            cells: [],
+            showResults: false,
+            winner: null
         }
     },
     mounted() {
@@ -106,11 +113,15 @@ export default {
             const isWinnerO = this.isWinner(playerO);
 
             if (isWinnerX) {
+                this.showResults = true
+                this.winner = 'X'
                 console.log('Player X is the Winner! Yay!');
                 return;
             }
 
             if (isWinnerO) {
+                this.showResults = true
+                this.winner = 'O'
                 console.log('Player O is the Winner! Yay!');
                 return;
             }
@@ -132,6 +143,8 @@ export default {
             
             // if all cells are occupied and there is no winner, means draw!
             if (areCellsFull) {
+                this.showResults = true
+                this.winner = 'nobody! This is a draw!'
                 console.log('No winner! This is a draw!');
             }
         },
@@ -177,6 +190,13 @@ export default {
 
             // none of winning patterns are found in the player's selected cells which means the player is not the winner yet!
             return false;
+        },
+        playAgain() {
+            this.isGameInit = false,
+            this.nextPlayer = '',
+            this.cells = [],
+            this.showResults = false,
+            this.winner = null
         }
     },
     watch: {
@@ -186,7 +206,7 @@ export default {
             },
             deep: true
         }
-    },
+    }
 }
 
 </script>
@@ -205,4 +225,21 @@ export default {
     flex-wrap: wrap;
 }
 
+a {
+    background-color: #fff ;
+    position: relative;
+    margin: 0 auto;
+    width: 30rem;
+    height: auto;
+    padding:10px;
+    font-size: 3rem;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px black;
+    font-family: Georgia;
+    font-weight: 600;
+}
+
+[v-cloak] {
+    display: none;
+}
 </style>
