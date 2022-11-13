@@ -1,5 +1,4 @@
 # training...
 
 Status?
-
 nothing  
